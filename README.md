@@ -6,5 +6,6 @@ responsive.
 This project has been done with React.
 
 If you want to use this, clone the repo and then run `npm start`.
-This will open a live server at [ https://localhost:3000 ].
+This will open a live server at [ https://localhost:3000
+](https://localhost:3000).
 
