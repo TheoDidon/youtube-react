@@ -30,7 +30,7 @@ function SideBar() {
       </div>
       <div className="flex flex-col items-center justify-center w-[100%] h-[100%] hover:bg-gray-200">
         <img
-          src="/assets/youtube-music.svg"
+          src="/youtube-react/assets/youtube-music.svg"
           className="w-7"
           alt="ytb-music"
         ></img>

@@ -16,7 +16,7 @@ function Navbar() {
       <div className=" flex flex-row justify-center items-center ">
         <Icon path={mdiMenu} size={1} />
         <img
-          src="/assets/youtube-logo-icon.webp"
+          src="/youtube-react/assets/youtube-logo-icon.webp"
           className="max-w-[100px] mx-4"
           alt=""
         />
