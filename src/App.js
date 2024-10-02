@@ -1,27 +1,28 @@
+import React from "react";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import SideBar from "./Components/SideBar";
-import VideoCard from "./Components/VideoCard";
-import { videos } from "./videos";
+import Explore from "./Pages/Explore";
+import Home from "./Pages/Home";
+import Subs from "./Pages/Subs";
+import Originals from "./Pages/Originals";
+import Music from "./Pages/Music";
+import Library from "./Pages/Library";
 
 function App() {
   return (
-    <div className="">
+    <Router>
       <Navbar />
       <SideBar />
-      <div className=" mt-24 ml-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4 bg-gray-100 p-4">
-          {Object.values(videos).map((video, index) => (
-            <VideoCard key={index} video={video} />
-          ))}
-        </div>
-      </div>
-      <p className="text-center">
-        Inspiration from{" "}
-        <a href="https://supersimple.dev/exercises/youtube">
-          https://supersimple.dev/exercises/youtube
-        </a>
-      </p>
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/explore" element={<Explore />} />
+        <Route path="/subs" element={<Subs />} />
+        <Route path="/originals" element={<Originals />} />
+        <Route path="/music" element={<Music />} />
+        <Route path="/Library" element={<Library />} />
+      </Routes>
+    </Router>
   );
 }
 

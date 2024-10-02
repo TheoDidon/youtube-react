@@ -2,7 +2,7 @@ import React from "react";
 
 function VideoCard({ video }) {
   return (
-    <div className="flex flex-col max-w-[300px] fr-1">
+    <div className="flex flex-col w-full fr-1">
       <div className="relative w-[100%]">
         <img src={video.thumbnail} className=" cover-full" alt="thumbnail" />
         <p className="absolute bottom-4 right-4 bg-black text-white p-1 rounded text-xs">
